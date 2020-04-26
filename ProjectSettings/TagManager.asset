@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - cam
+  - mediaSlider
+  - politiciansSlider
+  - ProductionSlider
   layers:
   - Default
   - TransparentFX
