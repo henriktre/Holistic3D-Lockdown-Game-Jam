@@ -5,11 +5,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class money : MonoBehaviour
+public class political : MonoBehaviour
 {
-    public TextMeshProUGUI moneyTxt;
-    public int cash;
-    public int wage;
+    public TextMeshProUGUI politicalTxt;
+    public int politicians;
+    public int influence;
     public float increment = 0.2f;
     float counter;
     // Start is called before the first frame update
@@ -27,12 +27,12 @@ public class money : MonoBehaviour
         }
         else
         {
-            cash += wage;
-            moneyTxt.text = cash.ToString() + "M$";
+            politicians += influence;
+            politicalTxt.text = politicians.ToString() + " Politicians";
             counter = increment;
         }
 
     }
-    
+
 
 }

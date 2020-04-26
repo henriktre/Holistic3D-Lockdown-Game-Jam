@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
+using TMPro;
 
 public class GameControllerScript : MonoBehaviour
 {
     public long worldPopulation = 7780366311;
-
-    public float coverupStat = 0.99999f;
-    public float coverupChange = 0.00001f;
-    public float increment = 1.0f;
+    public TextMeshProUGUI coverupTxt;
+    public decimal coverupStat = 0.95m;
+    public decimal coverupChange = 0.0001m;
+    public float increment = 0.1f;
     float counter;
 
 
@@ -31,9 +32,9 @@ public class GameControllerScript : MonoBehaviour
         {
             coverupStat -= coverupChange;
             counter = increment;
-            float tmp = coverupStat * (float)worldPopulation;
+            decimal tmp = coverupStat * (decimal)worldPopulation;
             long tmp2 = (long)tmp;
-            UnityEngine.Debug.Log(100-(coverupStat*100) + "% and " + (worldPopulation - tmp2) + " people knows the truth");
+            coverupTxt.text = decimal.Round((coverupStat*100), 2, System.MidpointRounding.AwayFromZero) + "% \n" + tmp2;
         }
     }
 }
