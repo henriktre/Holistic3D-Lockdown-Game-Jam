@@ -2982,6 +2982,7 @@ MonoBehaviour:
   political: {fileID: 519420035}
   gcs: {fileID: 519420033}
   product: {fileID: 519420038}
+  sliders: {fileID: 519420037}
 --- !u!114 &519420037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2997,6 +2998,9 @@ MonoBehaviour:
   mediaValue: 0
   politiciansValue: 0
   productionValue: 0
+  mediaModifier: 1
+  politiciansModifier: 1
+  productionModifier: 1
 --- !u!114 &519420038
 MonoBehaviour:
   m_ObjectHideFlags: 0
