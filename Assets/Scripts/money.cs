@@ -8,16 +8,15 @@ using TMPro;
 public class money : MonoBehaviour
 {
     public TextMeshProUGUI moneyTxt;
-    public int cash = 1000;
-    public int wage = 1;
-    public float increment = 1.0f;
+    public int cash;
+    public int wage;
+    public float increment = 0.2f;
     float counter;
     // Start is called before the first frame update
     void Start()
     {
         counter = increment;
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -29,10 +28,11 @@ public class money : MonoBehaviour
         else
         {
             cash += wage;
-            moneyTxt.text = cash.ToString() + "$";
+            moneyTxt.text = cash.ToString() + "M$";
             counter = increment;
         }
 
     }
+    
 
 }
