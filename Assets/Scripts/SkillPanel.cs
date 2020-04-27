@@ -48,7 +48,7 @@ public class SkillPanel : MonoBehaviour
 
     public void Moonlanding()
     {
-        if (political.politicians > 10 && money.cash > 250 && product.products > 0)
+        if (political.politicians >= 10 && money.cash > 250 && product.products > 0)
         {
             product.products--;
             political.politicians -= 10;
@@ -61,7 +61,7 @@ public class SkillPanel : MonoBehaviour
     //CHANGE THIS
     public void Paulisdead()
     {
-        if (political.politicians > 10 && money.cash > 250 && product.products > 0)
+        if (political.politicians >= 10 && money.cash > 250 && product.products > 0)
         {
             product.products--;
             political.politicians -= 10;
@@ -73,7 +73,7 @@ public class SkillPanel : MonoBehaviour
 
     public void Mytube()
     {
-        if (political.politicians > 10 && money.cash > 250 && product.products > 0)
+        if (political.politicians >= 10 && money.cash > 250 && product.products > 0)
         {
             product.products--;
             political.politicians -= 10;
@@ -85,7 +85,7 @@ public class SkillPanel : MonoBehaviour
 
     public void Assassination()
     {
-        if(political.politicians > 30 && product.products > 0)
+        if(political.politicians >= 30 && product.products > 0)
         {
             product.products--;
             political.politicians -= 30;
@@ -97,7 +97,7 @@ public class SkillPanel : MonoBehaviour
     public void RigElection()
     {
        
-        if(political.politicians > 120 && product.products > 0)
+        if(political.politicians >= 120 && product.products > 0)
         {
             product.products--;
             political.politicians -= 120;
@@ -108,7 +108,7 @@ public class SkillPanel : MonoBehaviour
 
     public void SecretArmy()
     {
-        if(political.politicians > 30 && product.products > 0)
+        if(political.politicians >= 30 && product.products > 0)
         {
             product.products--;
             political.politicians -= 30;

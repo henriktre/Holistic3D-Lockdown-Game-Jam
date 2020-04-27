@@ -4,6 +4,7 @@ using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class political : MonoBehaviour
 {
@@ -27,7 +28,11 @@ public class political : MonoBehaviour
         }
         else
         {
-            politicians += influence;
+            if(UnityEngine.Random.value > 0.90f)
+            {
+                politicians += influence;
+                
+            }
             politicalTxt.text = politicians.ToString() + " Politicians";
             counter = increment;
         }
